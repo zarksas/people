@@ -1,4 +1,5 @@
 
+
 const people = [ 
     {name: 'Sandra', age: 18}, 
     {name: 'Erin', age: 28}, 
@@ -18,4 +19,7 @@ const people = [
     {name: 'Peter', age: 69}
 ];
 
-const futurePeople = people.map((item) => item.age + 30)
+const futurePeople = people.map((item) => {
+    item.age += 30;
+    return item
+})
