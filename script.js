@@ -18,8 +18,4 @@ const people = [
     {name: 'Peter', age: 69}
 ];
 
-const minorPeople = people.filter((item) => {
-    if (item.age < 18) {
-      return true
-    }
-  })
+const oldPeople = people.filter((item) => item.age > 50)
