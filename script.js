@@ -18,4 +18,4 @@ const people = [
     {name: 'Peter', age: 69}
 ];
 
-people.forEach((item) => console.log(item))
+people.forEach((item) => console.log(item.name))
