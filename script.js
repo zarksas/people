@@ -23,3 +23,11 @@ const futurePeople = people.map((item) => {
     item.age += 30;
     return item
 })
+
+const deadPeople = futurePeople.map((item) => {
+    if (item.age > 100) {
+      {item.isDead = true}
+    }  else 
+    {item.isDead = false}
+    
+  })
