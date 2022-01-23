@@ -18,4 +18,4 @@ const people = [
     {name: 'Peter', age: 69}
 ];
 
-const oldPeople = people.filter((item) => item.age > 50)
+const futurePeople = people.map((item) => item.age + 30)
