@@ -19,15 +19,6 @@ const people = [
     {name: 'Peter', age: 69}
 ];
 
-const futurePeople = people.map((item) => {
-    item.age += 30;
-    return item
-})
-
-const deadPeople = futurePeople.map((item) => {
-    if (item.age > 100) {
-      {item.isDead = true}
-    }  else 
-    {item.isDead = false}
-    
-  })
+people.reduce((prew, item, index, array) => {
+  return prew + item.age/array.length
+}, 0);
