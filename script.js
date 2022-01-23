@@ -18,4 +18,8 @@ const people = [
     {name: 'Peter', age: 69}
 ];
 
-people.forEach((item) => console.log(item.name))
+const minorPeople = people.filter((item) => {
+    if (item.age < 18) {
+      return true
+    }
+  })
